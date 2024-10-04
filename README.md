@@ -10,28 +10,7 @@
 - ```clear```: clear console text
 - ```exit```: exits de terminal
 
-## Navigate Directories
-
-### Linux File System Tree:
-
-![Screenshot](./images/Linux%20File%20System.png)
-
-- **bin**: binary (commands and utilities that all users can run)
-- **sbin**: this directory contains programs that performs vital system tasks (network management, disk partitioning). Only the superuser has access to these programs.
-- **home**: each user is given a directory under the home directory. A user can store anything in his home directory
-- **opt**: optional (additional software)
-- **tmp**: temporary files, files created by various programs (**Generally cleared on reboot**)
-- **var**: variable data, data that frequently changes over time.
-  - Log files
-  - Data bases
-  - User mail
-  - Spools -> temporary storage location
-    - /var/spool is traditionally used for machine-local data being spooled to or from UNIX subsystems. For example, print jobs are spooled here for delivery to the lineprinter daemon, out-bound mail is spooled for delivery to remote systems, and UUCP files are spooled for transmission to UUCP neighbors. In-bound mail and news are spooled here for delivery to users, and at and cron jobs are spooled for delayed execution by the cron daemon.
-
-
-![Screenshot](./images/Linux%20Relative%20and%20Absolute%20paths.png)
-
-
+    
 ### Commands
 
 - ```pwd```: print working directory
@@ -65,34 +44,6 @@
 - **[DOES NOT WORK]** ```ls -```: should display you the content of your previous working directory
 
 ![Screenshot](./images/LS%20-L%20OUTPUT.png)
-
-## Linux Links
-
-- Every file in the system has an inode (Index node)
-  - Contains all file information except the file content and name  
-  - A database of a file
-  - They contain:
-    - Inode number
-    - File size
-    - Owner information
-    - Permission
-    - File type
-    - Number of links
-      - Soft Link
-      - Hard Link
-    - etc...
-
-### Soft Link
-- A soft link is the same as a shortcut in Windows
-- Aka Symbolic link
-- It is a pointer to the original file
-- It is a file pointing to another file
-  - Different inode number
-- Small file size
-- In case the original file gets deleted, the soft link will no longer work
-- You can create soft links for directories
-
-![Screenshot](./images/Linux%20Soft%20Links.png)
 
 ### Hard Link
 - Different name of the same file
