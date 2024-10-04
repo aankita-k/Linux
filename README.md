@@ -102,8 +102,6 @@
   - ```touch newFile```: this will update the file timestamp and keep the content
 
 
-![Screenshot](./images/Using%20Touch%20to%20Update%20Timestamp.png)
-
 ## MKDIR (Make directory) and RMDIR (Remove directory) Commands
 
 - If you want to create a directory, then you use ```mkdir``` command as follow:
@@ -128,20 +126,7 @@
 ## RM (Remove) Command
 
   - To delete non-empty-directory files, or just normal files you just do:
-    ```
-    touch fileToDelete
-    rm fileToDelete
-    mkdir folder
-    cd folder
-    touch file
-    cd ..
-    ```
-    - ```rm -R folder``` or ```rm -r folder```
-
-    - In case of non-empty-directory you need to run ```rm``` with the recursive flag ```-R```. Otherwise it will fail
-    - Also, the ```-R``` flag can be lowercase since it is not case sensitive for ```rm``` (although it is case sensitive for ```ls```)
-
-
+    
   - ```rm``` options:
 
     - ```rm -i```: Prompt you before removing any existing file. the ```-i``` means interactive mode
