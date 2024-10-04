@@ -190,20 +190,6 @@
 
   - ```file LS -L OUTPUT.png```: LS -L OUTPUT.png: PNG image data, 1968 x 488, 8-bit/color RGBA, non-interlaced
 
-## Command Line History
-
-  - ```history```: Show all the commands executed in the cmd
-  - ```history 10```: Show last 10 commands
-  - ```history -c```: Clear history
-    - Your history is stored at ```~/.bash_history```
-  - ```!number```: Runs a command from history
-
-## Shortcuts
-
-  - ```Control+a```: Start of the line
-  - ```Control+e```: End of the line
-  - ```Control+d```: Remove character from left to right
-  - ```Control+l```: Clear
 
 ## View text files (less, cat, tac, head, tail) Commands
 
@@ -216,15 +202,6 @@
   - ```tac file```: Shows the content of file, but reversed
   - ```head -n 20 file```: Show first 20 lines of file
   - ```tail -n 20 file```: Show last 20 lines of file
-
-
-## WC (word count) Command
-
-  - ```wc file```: Presents the data like -> Number of lines, number of words, number of bytes
-  - ```wc -l```: Show just number of lines
-  - ```wc -w```: Show just number of words
-  - ```wc -c```: Show just number of bytes
-  - ```wc -L```: Length of longest line in characters
 
 ## Types of Commands
 
@@ -308,13 +285,3 @@
     - ```rm [[:digit]]*[abc]```: Remove all the files that begins with a number and ends with the letter (a,b or c)
 
     - ```rm [[:digit]]*abc```: Remove all the files that begins with a number and ends with the letters abc all together  
-
-## Alias
-
-  - ```alias myname="cd Desktop;mkdir dir"```: Create an alias called myname that goes to the Desktop folder and creates a directory called dir
-
-  - ```unalias myname```: Delete an alias
-
-  - To retain an alias, save it inside ```~/.bashrc```
-
-  - ```alias```: List of all alias in the system
