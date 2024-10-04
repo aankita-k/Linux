@@ -45,25 +45,12 @@
 
 ![Screenshot](./images/LS%20-L%20OUTPUT.png)
 
-### Hard Link
-- Different name of the same file
-- Same file size
-- Same inode number
-- You cannot differentiate between a real file and a hard link
-- They are kind of a copy of the file
-- If I change a hard link file content, it will reflect on the other files (the original and other hard links)
-- In case I delete the original file, the hard link file will still work
-- **Be careful**: You should not create hard links for directories. Normally they are not even allowed because they break the file system structure.
-
-![Screenshot](./images/Linux%20Hard%20Links.png)
 
 ### Commands
 
 - ```ls -i```: show inode id of files
 
 - ```ls -l```: show files information (size in bytes, permission, etc.)
-  * Folders should start with the letter `d` 
-  * ![ls-a-folders](./images/ls-a-folders.png)
 
 - ```ln```: link
 
