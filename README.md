@@ -41,10 +41,6 @@
 
 - ```ls ..```: display the content of my parent directory
 
-- **[DOES NOT WORK]** ```ls -```: should display you the content of your previous working directory
-
-![Screenshot](./images/LS%20-L%20OUTPUT.png)
-
 
 ### Commands
 
